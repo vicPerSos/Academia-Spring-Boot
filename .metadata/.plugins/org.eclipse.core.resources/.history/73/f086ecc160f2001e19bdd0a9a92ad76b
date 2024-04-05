@@ -1,0 +1,17 @@
+package com.daw.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.daw.dto.Alumno;
+
+@RestController
+public class HolaMundoRestController {
+	@GetMapping("/saludo/{name}/{edad}")
+	public String HolaMundo(@PathVariable String name, @PathVariable int edad) {
+		
+		Alumno pepe = new Alumno();
+		return pepe.toString();	
+	}
+}

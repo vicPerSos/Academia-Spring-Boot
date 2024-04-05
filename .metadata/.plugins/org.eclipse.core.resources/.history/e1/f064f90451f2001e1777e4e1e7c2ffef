@@ -1,0 +1,5 @@
+package com.primerSpring.Primer.controllers;
+
+public class HolaMundoRestController {
+
+}

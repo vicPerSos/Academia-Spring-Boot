@@ -1,0 +1,16 @@
+package com.primerSpring.Primer.dto;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Alumno {
+
+	private String nombre;
+	private int edad;
+
+
+}

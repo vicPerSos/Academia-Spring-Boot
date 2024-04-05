@@ -1,0 +1,14 @@
+package com.primerSpring.Primer.dto;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+public class Alumno {
+
+	private String nombre;
+	private int edad;
+
+	@Override
+	public String toString() {
+		return "Hola soy " + this.nombre + " y tengo " + this.edad + " años.";
+	}
+}

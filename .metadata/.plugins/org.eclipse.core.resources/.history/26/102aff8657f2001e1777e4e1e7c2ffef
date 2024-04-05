@@ -1,0 +1,16 @@
+package com.primerSpring.Primer.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.primerSpring.Primer.dto.Alumno;
+
+@RestController
+public class HolaMundoRestController {
+	@GetMapping("/saludo")
+	public String HolaMundo() {
+		
+		Alumno pepe = new Alumno("Pepe",18);
+		return pepe.toString();
+	}
+}
