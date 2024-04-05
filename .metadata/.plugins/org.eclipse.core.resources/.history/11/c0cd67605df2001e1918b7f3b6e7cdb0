@@ -1,0 +1,12 @@
+package com.primerSpring.Primer.dto;
+
+public class Alumno {
+
+	private String nombre;
+	private int edad;
+
+	@Override
+	public String toString() {
+		return "Hola soy " + this.nombre + " y tengo " + this.edad + " años.";
+	}
+}

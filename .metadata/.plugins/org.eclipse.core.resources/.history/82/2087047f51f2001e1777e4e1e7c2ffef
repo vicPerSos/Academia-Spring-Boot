@@ -1,0 +1,7 @@
+package com.primerSpring.Primer.controllers;
+
+public class HolaMundoRestController {
+	public String HolaMundo() {
+		return "Hola Mundo Spring";
+	}
+}
