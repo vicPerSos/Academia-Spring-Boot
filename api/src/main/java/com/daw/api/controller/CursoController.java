@@ -4,6 +4,7 @@ import com.daw.api.model.entity.Curso;
 import com.daw.api.service.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -17,4 +18,13 @@ public class CursoController {
     public List<Curso> list(){
         return this.cursoService.findAll();
     }
+
+    @GetMapping("/curso/{idCurso}")
+    public Curso locateById(@PathVariable("idCurso") int idCurso){
+        return this.cursoService.findById(idCurso);
+    }
+
 }
+
+
+

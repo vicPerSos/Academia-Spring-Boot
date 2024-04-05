@@ -12,8 +12,6 @@ public interface AlumnoRepository extends JpaRepository <Alumno,Integer>{
     @Query("select a from Alumno a")
     List<Alumno> findAll();
 
-
-
     @Query("select a from Alumno a where a.id = :id")
     Optional<Alumno> findById(@Param("id") Integer idAlum);
 
